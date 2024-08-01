@@ -20,6 +20,7 @@
 }
 .body-title {
     margin: 0;
+    display: flex;
     text-align: center;
     position:relative;
     bottom: 350px;
@@ -30,6 +31,7 @@
     font-style: normal;
     text-align: center;
     margin: 0;
+    display: flex;
     font-size: 1.5rem;
     position: relative;
     bottom: 300px;

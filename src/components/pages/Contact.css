@@ -1,4 +1,47 @@
-h1 {
-    width: 50%;
-    margin: auto
+.contact-title {
+    margin: auto;
+    text-align: center;
+}
+.phone-title {
+    text-align: center;
+}
+.email-title {
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.column {
+    padding: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: auto;
+}
+.fa-brands, .fa, .fa-solid, .fab {
+    font-size: 48px;
+    display: flex; /* Use flex display */
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 0.3s;
+    color: #0072b1;
+}
+.btn:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: #0072b1;
+}
+.github {
+    color: black;
+}
+.github:hover {
+    color: black;
 }

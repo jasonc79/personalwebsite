@@ -1,7 +1,7 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Contact from './components/pages/Contact';
 import Home from './components/pages/Home';
@@ -16,7 +16,7 @@ function App() {
         <Route path = '/contacts' exact component = {Contact}/>
         <Route path = '/todolist' exact component = {TodoList}/>
       </Switch>
-      <Footer/>
+      {/* <Footer/> */}
     </Router>
     
     </>
