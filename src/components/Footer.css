@@ -1,0 +1,17 @@
+.footer {
+    background: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+i {
+    width: 1rem;
+    height: 1rem;
+  }
