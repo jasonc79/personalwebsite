@@ -27,15 +27,15 @@ transporter.verify((error, success) => {
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use('/', router);
 
 app.get('/', (req, res) => {
-    res.json('hi');
+    res.json('testing...');
 });
-router.post('/send', (req, res, next) => {
+app.post('/send', (req, res, next) => {
     var name = req.body.name;
     var email = req.body.email;
     var message = req.body.message;
+    console.log('Received data:', req.body);
     var senderEmail = `${name} <${creds.EMAIL}>`;
     var yourEmail = `${creds.YOURNAME} <${creds.EMAIL}>`;
     var content = `name: ${name} \n email: ${email} \n message: ${message} `;
@@ -47,13 +47,13 @@ router.post('/send', (req, res, next) => {
     };
     // Delivers the message to my email address
     transporter.sendMail(mail, (err, data) => {
-        console.log(err);
-        console.log(data);
         if (err) {
+            console.log('Error sending email', err)
             res.json({
                 status: 'fail',
             });
         } else {
+            console.log('Email sent:', data)
             res.json({
                 status: 'success',
             });
