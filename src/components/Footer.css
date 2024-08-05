@@ -10,10 +10,16 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    gap: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
-.linkedin, .github {
+.linkedin, .github, .instagram, .facebook {
     font-size: 20px;
 }
+.facebook {
+    color: #4267B2;
+}
+
 /* i {
     width: 1rem;
     height: 1rem;

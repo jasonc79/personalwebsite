@@ -57,7 +57,7 @@ html {
     outline: none;
   }
   
-  form {
+  .to-do-list {
     position: relative;
     width: 480px;
     margin: 30px auto 20px auto;
@@ -66,8 +66,8 @@ html {
     border-radius: 7px;
     box-shadow: 0 1px 5px rgb(138, 137, 137);
   }
-  form input,
-  form textarea {
+  .to-do-list input,
+  .to-do-list textarea {
     width: 100%;
     border: none;
     padding: 4px;
@@ -76,7 +76,7 @@ html {
     font-family: inherit;
     resize: none;
   }
-  form button {
+  .to-do-list button {
     position: absolute;
     right: 18px;
     bottom: -18px;

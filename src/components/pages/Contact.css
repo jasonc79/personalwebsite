@@ -30,7 +30,7 @@
     align-items: center; */
     margin: auto;
 }
-.fa-brands, .fa, .fa-solid, .fab {
+#envelope, #linked-in, #phone, #github {
     font-size: 48px;
     display: flex; /* Use flex display */
     justify-content: center;
@@ -40,11 +40,12 @@
     text-decoration: none;
     opacity: 0.6;
     transition: 0.3s;
-    color: #0072b1;
 }
 .btn:hover {
     opacity: 1;
     text-decoration: none;
+}
+.linkedin {
     color: #0072b1;
 }
 .github {

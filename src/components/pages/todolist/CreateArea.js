@@ -26,7 +26,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form>
+      <form className="to-do-list">
         <input
           name="title"
           placeholder="Title"

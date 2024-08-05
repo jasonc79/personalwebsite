@@ -1,3 +1,19 @@
 .name, .email, .message {
-    font-size: 22px;
+    font-size: 20px;
+}
+.message {
+    overflow: scroll;
+}
+.contact-form {
+    border-style: solid;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    padding: 20px;
+    background-color: #B0E0E6;
+}
+.contact-form-title {
+    font-size: 25px;
+}
+.submit-btn {
+
 }
