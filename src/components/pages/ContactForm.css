@@ -1,19 +1,30 @@
 .name, .email, .message {
     font-size: 20px;
 }
-.message {
-    overflow: scroll;
-}
+
 .contact-form {
     border-style: solid;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 7px;
     padding: 20px;
-    background-color: #B0E0E6;
 }
 .contact-form-title {
     font-size: 25px;
 }
 .submit-btn {
-
+    font-size: 15px;
+    padding: 2px;
 }
+.small-input {
+    size: 100px;
+    width: 300px;
+}
+.large-input {
+    width: 300px;
+    height: 100px;
+    overflow: scroll;
+}
+/*
+.small-input, .large-input {
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+} */

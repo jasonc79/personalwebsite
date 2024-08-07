@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 // function onNameChange(event) {
 //     this.setState({name: event.target.value})
 // }
@@ -12,7 +13,11 @@ import React from "react";
 // }
 
 const Travel = () => {
-    return (<h1>Hello</h1>
+    return (
+    <>
+       <h1>Hello</h1> 
+       <Footer/>
+    </>
     );
 };
 export default Travel;

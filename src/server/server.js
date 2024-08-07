@@ -1,7 +1,6 @@
 import cors from 'cors';
 import express from 'express';
 import nodemailer from 'nodemailer';
-// import fs from 'fs';
 import * as creds from './config.js';
 var router = express.Router();
 var transport = {

@@ -43,27 +43,27 @@ const ContactForm = () => {
         if (!contactData.name) {
             setError((prevData) => ({
                 ...prevData,
-                name: "name, "
+                name: "Name is required"
             }))
             valid = false
         }
         if (!contactData.email) {
             setError((prevData) => ({
                 ...prevData,
-                email: "email, "
+                email: "Email is required"
             }))
             valid = false
         } else if (!validateEmail(contactData.email)) {
             setError((prevData) => ({
                 ...prevData,
-                email: "email, "
+                email: "Invalid email"
             }))
             valid = false
         }
         if (!contactData.message) {
             setError((prevData) => ({
                 ...prevData,
-                message: "message"
+                message: "Message is required"
             }))
             valid = false
         }
@@ -83,19 +83,19 @@ const ContactForm = () => {
     return (
         <>
             <form className="contact-form" onSubmit={submitContactData}>
-            <h1 className="contact-form-title">Contact Form</h1>
+            <div className='container'>
             <h2 className='name'>Name</h2>
-            <input id='name' name='name' placeholder= "insert name..." onChange={handleChange}/>
-            <h2 className='email'>Email</h2>
-            <input id='email' name='email' placeholder="insert email..." onChange={handleChange}/>
-            <h2 className='message'>Message</h2>
-            <input id='message' name='message' placeholder="write a message..." onChange={handleChange}/>
-            <button className='submit-btn'>Submit</button>
-            </form>
             {error.name && <span style={{color: 'red'}}>{error.name}</span>}
+            <input type='text' className='small-input' name='name' placeholder= "insert name..." onChange={handleChange}/>
+            <h2 className='email'>Email</h2>
             {error.email && <span style={{color: 'red'}}>{error.email}</span>}
+            <input type='email' className='small-input' name='email' placeholder="insert email..." onChange={handleChange}/>
+            <h2 className='message'>Message</h2>
             {error.message && <span style={{color: 'red'}}>{error.message}</span>}
-            {(error.name || error.email || error.message) && <span style={{color: 'red'}}> are invalid.</span>}
+            <textarea type='text' className='large-input' name='message' placeholder="write a message..." onChange={handleChange}/>
+            <button className='submit-btn'>Submit</button>
+            </div>
+            </form>
         </>
     )
 }

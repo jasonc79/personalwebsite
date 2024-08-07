@@ -11,9 +11,18 @@ function HeroSection() {
     </head>
     <div className = 'hero-container'>
       <h1 className='body-title'>Hello, I am Jason!</h1>
-      <h2 className = 'body-text'>
-          I am an aspiring software engineer who has an interest in tech and finance.
-      </h2>
+      <div className='grid-container-hero'>
+        <div className='grid-item-hero'>
+            <h2 className = 'body-text'>
+            I am an aspiring software engineer who has an interest in tech and finance.
+            </h2>
+        </div>
+        <div className='grid-item-hero'>
+            <h2 className='body-text'>
+                I have slight autism
+            </h2>
+        </div>
+      </div>
     </div>
     </>
   );
