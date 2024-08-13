@@ -20,7 +20,7 @@ function ToDoList() {
   }
 
   return (
-    <div>
+    <div className='todolist'>
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
         return (

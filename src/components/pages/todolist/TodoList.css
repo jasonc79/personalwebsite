@@ -90,4 +90,6 @@ html {
     cursor: pointer;
     outline: none;
   }
-  
+  .todolist {
+    background-image: linear-gradient(to right, white, rgb(117, 117, 117));
+  }

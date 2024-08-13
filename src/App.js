@@ -18,7 +18,6 @@ function App() {
         <Route path = '/travel' exact component ={Travel}/>
         <Route path = '/todolist' exact component = {TodoList}/>
       </Switch>
-      {/* <Footer/> */}
     </Router>
     
     </>

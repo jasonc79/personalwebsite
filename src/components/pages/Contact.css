@@ -8,6 +8,10 @@
 .email-title {
     align-items: center;
 }
+.contact-container {
+    background-image: linear-gradient(to right, white, rgb(117, 117, 117));
+    padding-bottom: 124px;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -18,16 +22,13 @@
 .grid-container {
     padding-top: 50px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     column-gap: 200px;
     align-items: center;
     justify-content: center;
 }
 .column {
     padding: 20px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     margin: auto;
 }
 #envelope, #linked-in, #phone, #github {

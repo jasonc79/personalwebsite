@@ -16,35 +16,35 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
     return (
-    <>
+    <div className='contact-container'>
     <h1 className="contact-title">Contact Me</h1>
-    <div className="grid-container">
-        <div className="grid-item">
-            <div className="container">
-                <div className="column">
-                    <a className ="btn linkedin" href="https://www.linkedin.com/in/jason-cheung-33337a206/"><i class="fa-brands fa-linkedin-in" id ='linked-in'></i></a>
-                    <h2 className="linkedIn-name">Jason Cheung</h2>
-                </div>
-                <div className="column">
-                    <i class="fa fa-envelope" id='envelope' aria-hidden="true"></i>
-                    <h2 className="email-title">jcheung379@gmail.com</h2>
-                </div>
-                <div className="column">
-                    <i class="fa-solid fa-phone" id='phone'></i>
-                    <h2 className="phone-title">0416677252</h2>
-                </div>
-                <div className="column">
-                    <a className="btn github" href="https://github.com/jasonc79"><i class="fab fa-github" id='github'></i></a>
-                    <h2 className="github-title">jasonc79</h2>
+        <div className="grid-container">
+            <div className="grid-item">
+                <div className="container">
+                    <div className="column">
+                        <a className ="btn linkedin" href="https://www.linkedin.com/in/jason-cheung-33337a206/"><i class="fa-brands fa-linkedin-in" id ='linked-in'></i></a>
+                        <h2 className="linkedIn-name">Jason Cheung</h2>
+                    </div>
+                    <div className="column">
+                        <i class="fa fa-envelope" id='envelope' aria-hidden="true"></i>
+                        <h2 className="email-title">jcheung379@gmail.com</h2>
+                    </div>
+                    <div className="column">
+                        <i class="fa-solid fa-phone" id='phone'></i>
+                        <h2 className="phone-title">0416677252</h2>
+                    </div>
+                    <div className="column">
+                        <a className="btn github" href="https://github.com/jasonc79"><i class="fab fa-github" id='github'></i></a>
+                        <h2 className="github-title">jasonc79</h2>
+                    </div>
                 </div>
             </div>
+            <div className="grid-item">
+                <ContactForm/>
+            </div>
         </div>
-        <div className="grid-item">
-            <ContactForm/>
-        </div>
+        <Footer/>
     </div>
-    <Footer/>
-    </>
     );
 };
 export default Contact;
