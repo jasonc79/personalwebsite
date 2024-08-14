@@ -54,3 +54,9 @@
         column-gap: 0px;
     }
 }
+@media screen and (max-width: 500px) {
+    .img {
+        width: 350px;
+        height: 233.3px;
+    }
+}

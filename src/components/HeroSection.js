@@ -22,7 +22,7 @@ function HeroSection() {
             I am a student and aspiring software engineer who has an interest in tech and finance.
             </h2>
             <h2 className='body-text'>
-                I enjoy travelling, reading and going to the gym! I also code in my spare time!
+                I enjoy travelling, reading and going to the gym! I also code in my spare time! (My projects coming soon)
             </h2>
         </div>
         <div className='grid-item-hero'>
