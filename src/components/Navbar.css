@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 999;
   }
@@ -58,7 +58,7 @@
     font-size: 1.8rem;
   }
   
-  .nav-menu {
+  .nav-menu { /* Placement of nav bar buttons */
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -70,7 +70,7 @@
   }
   
   .nav-item {
-    height: 5px;
+    height: 10px;
   }
   
   .nav-links {
@@ -111,11 +111,13 @@
     .nav-menu {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      gap: 30px;
       width: 100%;
-      height: 90vh;
+      height: 100vh;
       position: absolute;
       top: 80px;
-      left: -100%;
+      left: -100%; /* Hides buttons from display when click is false*/
       opacity: 1;
       transition: all 0.5s ease;
     }
@@ -128,26 +130,23 @@
       z-index: 1;
     }
   
-    .nav-links {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-      color: black;
-    }
-  
     .nav-links:hover {
-      background-color: white;
-      color: #242424;
-      border-radius: 0;
+      border: 0;
+      transform: scale(1.05);
     }
   
     .navbar-logo {
       position: absolute;
-      top: 0;
+      top: 10px;
       left: 0;
       transform: translate(25%, 50%);
     }
+    .navbar-logo-small {
+        position: absolute;
+        top: 35px;
+        left: 70px;
+        transform: translate(25%, 50%);
+      }
   
     .menu-icon {
       display: block;
@@ -164,24 +163,20 @@
       font-size: 2rem;
     }
   
-    .nav-links-mobile {
-      display: block;
+    .nav-links {
+      display: absolute;
       text-align: center;
-      margin: 2rem auto;
-      border-radius: 4px;
-      width: 80%;
+      top: 40px;
       text-decoration: none;
       font-size: 1.5rem;
       background-color: transparent;
-      color: #fff;
+      color: black;
       padding: 14px 20px;
-      border: 1px solid #fff;
       transition: all 0.3s ease-out;
     }
-  
-    .nav-links-mobile:hover {
-      background: black;
-      color: #242424;
-      transition: 250ms;
+    
+    .nav-item {
+      position: relative;
+      bottom: 450px;
     }
   }
